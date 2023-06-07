@@ -26,11 +26,11 @@ pipeline{
     
         stage("Checkout from SCM"){
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/RujaShrestha/DevOps.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/RujaShrestha/DevOps'
             }
 
         }
-
+/*
          stage("Build Application"){
             steps {
                 sh "mvn clean package"
@@ -55,7 +55,7 @@ pipeline{
             }
 
         }
-
+*/
         /*stage("Quality Gate") {
             steps {
                 script {
